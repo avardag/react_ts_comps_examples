@@ -1,10 +1,28 @@
 import React from "react";
+import Counter from "./Counter";
 
-const Title = () => <h1>Hello guys</h1>;
+//TYPING FUNCTIONAL COMPONENTS
+
+// const Title:React.FC = () => <h1>Hello guys</h1>;
+
+// const Title: React.FC<{ title: string }> = ({ children, title }) => (
+//   <h1>
+//     {title}
+//     {children}
+//   </h1>
+// );
+
+type TitleProps = {
+  title: string;
+  text?: string;
+};
+const Title = ({ title, text = "" }: TitleProps) => <h1>{title}</h1>;
+
 const App = () => {
   return (
     <div>
-      <Title />
+      <Title title="Hello guys" />
+      <Counter title="Counter:" />
     </div>
   );
 };
