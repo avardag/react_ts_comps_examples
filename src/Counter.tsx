@@ -19,12 +19,12 @@ class Counter extends Component<CounterProps, CounterState> {
     title: "Default counter",
   };
   //lifecycle methods
-  static getDerivedStateFromProps(
-    nextProps: CounterProps,
-    prevState: CounterState
-  ): CounterState | null {
-    return false ? { count: 2 } : null;
-  }
+  // static getDerivedStateFromProps(
+  //   nextProps: CounterProps,
+  //   prevState: CounterState
+  // ): CounterState | null {
+  //   return false ? { count: 2 } : null;
+  // }
   componentDidMount(): void {}
   shouldComponentUpdate(
     nextProps: CounterProps,

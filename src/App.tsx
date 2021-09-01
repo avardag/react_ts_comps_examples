@@ -1,5 +1,8 @@
 import React from "react";
 import Counter from "./Counter";
+import Counter2 from "./CounterWithEvents";
+import SimpleFormEvents from "./SimpleFormEvents";
+import Form from "./Form";
 
 //TYPING FUNCTIONAL COMPONENTS
 
@@ -23,6 +26,9 @@ const App = () => {
     <div>
       <Title title="Hello guys" />
       <Counter title="Counter:" />
+      <Counter2 title="Counter 2:" />
+      <SimpleFormEvents />
+      <Form />
     </div>
   );
 };
